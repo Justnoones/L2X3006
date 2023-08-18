@@ -1,0 +1,12 @@
+$_SESSION is the value that keep in sever, never forgot to start with "session_start()" the code won't work without that.;
+
+session_start(); // start point
+$_SESSION["key"] = value; // create value
+session_destory(); // use to delete all value
+
+
+Cookie is the value that sever tells broswer to keep the temporary value
+
+
+        // key  // value // expiredate      // filepath
+setcookie("name", "jhon", time()+60*60*24*30, "/");

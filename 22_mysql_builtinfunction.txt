@@ -1,0 +1,31 @@
+// mysqli_connect("hostname", "username", "password", "database_name"); // database connect with backend language
+mysqli_connect("localhost", "root", "", i2x3006);
+
+// mysqli_connect_error();
+
+// mysqli_query(connection, sql query);
+sql_query -> "SELECT" * FROM table_name WHERE connection;
+echo "Connection error" . mysqli_connect_error();
+
+// mysqli_error();
+
+mysqli_num_row(query); // query -> mysqli_query() // number of mysqli_num_row
+
+// mysqli_fetch_assoc(query) // query to assoArray in row by row
+
+// sql injection
+
+$stmt = connection->prepare(sql) // inclulde ? ? ?
+$stmt->bind_param('sss', $var1, $var2, $var3); // s = one variable
+$stmt->execute();
+
+$sql = "INSERT INTO user(name, phone) VALUES (?, ?)";
+$stmt = connection->prepare(sql);
+$stmt->bind_param(sss, $name, $phone, $id);
+$stmt->execute();
+
+$result = $stmt->get_result();
+
+s-interger
+i-interger
+d-double

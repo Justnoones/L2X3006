@@ -1,0 +1,11 @@
+1.String // " " , '' // "hello" , 'mello'
+2.Intenger // 12 , 100
+3.Float // 1.6 , 20.77
+4.Boolean // true(1) , false(0)
+
+5.Array // ["mg mg" , "kyaw kywa" , 16 , true];
+6.Object // {
+    key : value;
+}
+7.NULL // no value assigned
+8.Resources

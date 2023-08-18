@@ -1,0 +1,59 @@
+Database => localhost => phpMyadmin
+
+// Create Database
+name utf8
+
+// Drop Database
+operation => drop database
+
+// Create Table
+id name phone address created_at updated_at
+
+// Types
+// int, float, double, boolean, varchar(length), text, mediumtext, longtext, timestamp, date
+// default => created_at, updated_at => CURRENT_TIMESTAMP
+//  id => primarykey + auto_increment
+
+// SQL Query
+// SELECT *
+    SELECT * FROM tablename WHERE condition
+
+// SELECT // READ
+    SELECT col1, col2, col3... FROM tablename
+
+// INSERT // CREATE // create()
+    INSERT INTO tablename(columns)
+    VALUE(values),
+    (values),
+    (values);
+    // CURRENT_TIMESTAMP // current_timestamp() // otherwise 00000000000000000
+
+// UPDATE // UPDATE // update()
+    UPDATE tablename
+    set col1 = value, set col2 = value, col3 = value3...
+    WHERE condition;
+
+// DELETE // DELETE // delete()
+    DELETE FROM tablename WHERE condition;
+
+// condition
+    // AND
+        // WHERE condition1 AND condition2
+
+    // OR
+        // WHERE condition1 OR condition2
+
+    // NOT
+        WHERE NOT condition
+
+    // BETWEEN
+        // WHERE col_name BETWEEN value1 AND value2
+
+    // IN
+        // WHERE column IN ('value1', 'value2')
+
+    // NOT IN
+        // WHERE column NOT IN ('value1', 'value2')
+
+SELECT table1.column, table1.column..., table2.column 
+FROM table_name JOIN table_nam ON table1.column = table2.column;
